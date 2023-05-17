@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>eCommerce - website | Shop Details</title>
+	<link rel="shortcut icon" href="../../assets/images/favicon.png" type="image/x-icon" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+	<link rel="stylesheet" href="../../styles/preloader.css">
+	<link rel="stylesheet" href="../../styles/global.css" />
+	<link rel="stylesheet" href="../../styles/bestProduct.css" />
+	<link rel="stylesheet" href="../../styles/footer.css" />
+	<link rel="stylesheet" href="../../styles/imageMagnifier.css">
+	<link rel="stylesheet" href="../../assets/lib/Magnific-Popup/dist/magnific-popup.css">
+	<link rel="stylesheet" href="../../styles/shopDetails.css">
+	<link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+	<!-- preloader section -->
+	<div class="preloader-content">
+		<!-- begin cubes modal -->
+		<div class="cubes">
+			<div class="sk-cube sk-cube1"></div>
+			<div class="sk-cube sk-cube2"></div>
+			<div class="sk-cube sk-cube3"></div>
+			<div class="sk-cube sk-cube4"></div>
+			<div class="sk-cube sk-cube5"></div>
+			<div class="sk-cube sk-cube6"></div>
+			<div class="sk-cube sk-cube7"></div>
+			<div class="sk-cube sk-cube8"></div>
+			<div class="sk-cube sk-cube9"></div>
+		</div>
+	</div>
+	<!-- go to top button -->
+	<a href="#" class="goTop">
+		<span class="fas fa-arrow-up"></span>
+	</a>
+	<!-- menu wrapper -->
+	<div class="menu-wrapper">
+		<div class="menu-wrapper-heading">
+			<a href="../../index.html">Fortune.</a>
+		</div>
+		<div class="accordion-links">
+			<div class="accordion custom-accordion" id="accordionExample">
+				<a href="../../index.html" class="wrap-link extra-padding">Home</a>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingOne">
+						<button class="accordion-button custom-acc-button collapsed" type="button"
+							data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+							aria-controls="collapseOne">
+							Shop
+						</button>
+					</h2>
+					<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+						data-bs-parent="#accordionExample">
+						<div class="accordion-body custom-acc-body">
+							<a href="../../views/shop/shopSingles.html">Single Shop</a>
+							<a href="../../views/shop/shopDetails.html">Details Shop</a>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingTwo">
+						<button class="accordion-button custom-acc-button collapsed" type="button"
+							data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+							aria-controls="collapseTwo">
+							Pages
+						</button>
+					</h2>
+					<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+						data-bs-parent="#accordionExample">
+						<div class="accordion-body custom-acc-body">
+							<a href="../../views/pages/login.html">Login</a>
+							<a href="../../views/pages/cart.html">Cart</a>
+							<a href="../../views/pages/checkout.html">Checkout</a>
+							<a href="../../views/pages/404.html">404 Page</a>
+						</div>
+					</div>
+				</div>
+				<a href="../contact.html" class="wrap-link">Contact Us</a>
+			</div>
+		</div>
+	</div>
+	<header>
+		<!-- main navbar -->
+		<nav class="main-nav">
+			<div class="links">
+				<a href="#" class="slider-logo"><i class="fas fa-sliders-h"></i></a>
+				<a href="../../index.html">Home</a>
+				<div class="shop-link">
+					<a href="#" class="sub-menu">Shop</a>
+					<div class="expand-menu">
+						<a href="../../views/shop/shopSingles.html">Single Shop</a>
+						<a href="../../views/shop/shopDetails.html">Details Shop</a>
+					</div>
+				</div>
+				<div class="shop-link">
+					<a href="#" class="sub-menu">Pages</a>
+					<div class="expand-menu">
+						<a href="../../views/pages/login.html">Login</a>
+						<a href="../../views/pages/cart.html">Cart</a>
+						<a href="../../views/pages/checkout.html">Checkout</a>
+						<a href="../../views/pages/404.html">404 page</a>
+					</div>
+				</div>
+				<a href="../contact.html">Contact Us</a>
+			</div>
+			<div class="brand">
+				<a href="../../index.html">Fortune.</a>
+			</div>
+			<div class="menus">
+				<a href="../../views/pages/login.html">Login</a>
+				<span> | </span>
+				<a href="#" id="searching"><i class="fas fa-search"></i></a>
+				<a href="#"><i class="far fa-heart"></i></a>
+				<a href="#"><i class="fas fa-shopping-bag"></i></a>
+			</div>
+			<!-- nav button on screen changes -->
+			<div class="nav-menu-btn">
+				<a href="#" class="bars-btn"><span class="nav-menu-btn-bars"><i class="fas fa-bars"></i></span></a>
+				<a href="#" class="cross-btn"><span class="nav-menu-btn-x"><i class="fas fa-times"></i></span></a>
+			</div>
+		</nav>
+		<div class="search-bar-wrapper-hide">
+			<div class="search-option">
+				<span>Search</span>
+				<span class="cls-btn"><i class="fas fa-times"></i></span>
+				<form class="search-input">
+					<input type="search" name="search" id="search-box" placeholder="Search text">
+					<button type="submit">Search</button>
+				</form>
+			</div>
+		</div>
+	</header>
+	<!-- breadcrumb content -->
+	<section class="container-fluid breadcrumb-section">
+		<div class="breadcrumb-area">
+			<h3>SHOP DETAILS</h3>
+			<div class="breadcrumb-links">
+				<a href="../../index.html">Home</a> - <a href="#">Shop Details</a>
+			</div>
+		</div>
+	</section>
+	<div class="container-fluid">
+		<div class="container-body">
+			<div class="row">
+				<!-- product images -->
+				<div class="col-md-6 col-12">
+					<div class="products-images">
+						<div class="product-img-single">
+							<div class="img-magnifier-container">
+								<span class="new-available mod-pl-label">50% off</span>
+								<div class="img-magnifier-glass"></div>
+								<img id="opImage" onmousemove="magnify('opImage', 3);"
+									src="../../assets/images/shop-img-details-1.png" alt="img-details1">
+							</div>
+						</div>
+						<div class="all-product-img">
+							<img id="img1" onclick="expandImg('img1');" src="../../assets/images/shop-img-details-1.png"
+								alt="img1">
+							<img id="img2" onclick="expandImg('img2');" src="../../assets/images/shop-img-details-2.png"
+								alt="img2">
+							<img id="img3" onclick="expandImg('img3');" src="../../assets/images/shop-img-details-3.png"
+								alt="img3">
+							<img id="img4" onclick="expandImg('img4');" src="../../assets/images/shop-img-details-4.png"
+								alt="img4">
+						</div>
+					</div>
+				</div>
+				<!-- shopping cart details -->
+				<div class="col-md-6 col-12">
+					<div class="shop-total-details">
+						<h3 class="product-heading sp-padding">
+							White chair tool making easer
+						</h3>
+						<div class="review">
+							<div class="stars">
+								<span class="fas fa-star"></span>
+								<span class="fas fa-star"></span>
+								<span class="fas fa-star"></span>
+								<span class="fas fa-star"></span>
+								<span class="fas fa-star"></span>
+								<span>( 31 reviews )</span>
+							</div>
+						</div>
+						<div class="product-price">
+							$<span class="discount-price">55.00</span>
+							<del class="ps-1">$<span id="main-price">110.00</span></del>
+						</div>
+						<div class="product-colors">
+							<div class="black-block"></div>
+							<div class="gray-block"></div>
+							<div class="golden-block"></div>
+
+							<div id="my-popup">
+								<a href="../../assets/images/shop-img-details-1.png" alt="img1">
+									<span title="Expand Images" class="expand-icon text-muted">
+										<i class="fas fa-expand"></i>
+									</span>
+								</a>
+								<a href="../../assets/images/shop-img-details-2.png" alt="img2"></a>
+								<a href="../../assets/images/shop-img-details-3.png" alt="img3"></a>
+								<a href="../../assets/images/shop-img-details-4.png" alt="img4"></a>
+							</div>
+						</div>
+						<!-- cart section here -->
+						<div class="product-cart">
+							<div class="product-count">
+								<span onclick="decreaseCount();"> - </span>
+								<span id="product-count"> 1 </span>
+								<span onclick="increaseCount();"> + </span>
+							</div>
+							<button class="btn cart-btn">
+								<a href="../pages/cart.html"><span class="scale-none text-light">Add To Cart</span></a>
+								<span class="d-none">Cart</span>
+							</button>
+							<div onclick="likeProduct();" class="product-like">
+								<span><i class="far fa-heart liking-product"></i></span>
+							</div>
+						</div>
+						<!-- product details -->
+						<div class="product-cart-details text-muted">
+							Per ridiculus Penatibus, ullamcorper ipsam erat vitae nobis consequuntur voluptas nascetur,
+							deserunt? Illum ultricies ligula,
+							fermentum. Sagittis Habitasse, do elit odit eos! Laudantium integer.
+						</div>
+						<div class="product-status">
+							<div class="product-brand">
+								Brand: <span class="text-muted">Azmari House</span>
+							</div>
+							<div class="product-availability">
+								Availability: <span class="text-muted">In Stock</span>
+							</div>
+						</div>
+						<div class="social-media-icons">
+							<span>Share: </span>
+							<a href="#"><span><i class="fab fa-facebook"></i></span></a>
+							<a href="#"><span><i class="fab fa-instagram"></i></span></a>
+							<a href="#"><span><i class="fab fa-twitter"></i></span></a>
+							<a href="#"><span><i class="fab fa-youtube"></i></span></a>
+							<a href="#"><span><i class="fab fa-pinterest"></i></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- description about products -->
+	<section class="container-fluid">
+		<div class="container-body">
+			<h5><span>Description</span></h5>
+			<div class="text-muted">
+				Git, eu! Libero fermentum! Vivamus nibh mus curae, a ullamco nesciunt repudiandae, labore reiciendis
+				similique! Dicta, non praesent dolor culpa pulvinar rerum gravida orci, repellat omnis architecto in,
+				scelerisque nostrud potenti mauris, eros, luctus donec lobortis. Commodo
+				<br><br>
+				Morbi molestiae explicabo, a sapien hac gravida quos, impedit, minim distinctio velit, itaque nibh,
+				maiores tempora volutpat! Minima, voluptates adipisci pulvinar libero mus. Ratione! Pretium, montes
+				habitant dignissim mollit? Suscipit? Accusamus sequi repudiandae penatibus delectus, labore! Vehicula
+				error, nostrum expedita porttitor adipiscing, eget eiusmod porro diamlorem assumenda massa voluptates
+				esse, maecenas sint rem asperiores lobortis esse dolor augue? Minima consequuntur, volutpat cupidatat
+				augue.
+			</div>
+		</div>
+	</section>
+	<!-- Review -->
+	<section class="container-fluid">
+		<div class="container-body">
+			<h5><span>Add Review</span></h5>
+			<div class="row">
+				<div class="col-md-6 col-12 derived-box">
+					<div class="review-content">
+						<a href="#"><span> REVIEWS (39) </span></a>
+						<p>There are no reviews yet!</p>
+						<p class="text-muted">Your email address will not be published. Required fields are marked*</p>
+						<hr>
+						<span>Add your review</span>
+					</div>
+				</div>
+				<div class="col-md-6 col-12 padding-input-content">
+					<div class="user-rating">
+						<span>Your Rating</span>
+						<div class="rate">
+							<input type="radio" id="star5" name="rate" value="5" />
+							<label for="star5" title="text">5 stars</label>
+							<input type="radio" id="star4" name="rate" value="4" />
+							<label for="star4" title="text">4 stars</label>
+							<input type="radio" id="star3" name="rate" value="3" />
+							<label for="star3" title="text">3 stars</label>
+							<input type="radio" id="star2" name="rate" value="2" />
+							<label for="star2" title="text">2 stars</label>
+							<input type="radio" id="star1" name="rate" value="1" />
+							<label for="star1" title="text">1 star</label>
+						</div>
+					</div>
+					<!-- write something -->
+					<span class="text-muted">Write something</span><br>
+					<textarea class="form-control review-input" name="review" rows="6"></textarea>
+					<form action="/views/shop/shopDetails.html" class="review-own-details" method="get">
+						<div class="main-fields">
+							<div class="name">
+								<label class="text-muted" for="name">Your Name*</label>
+								<input type="text" class="form-control review-input" required>
+							</div>
+							<div class="email">
+								<label class="text-muted" for="email">Your Email*</label>
+								<input type="email" class="form-control review-input" required>
+							</div>
+						</div>
+						<div class="remember-submit-btn">
+							<input class="form-check-input" type="checkbox"> <span class="text-muted">Save my name,
+								email, and website for next time.</span>
+							<br>
+							<button class="btn shop-btn" type="submit">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- related products -->
+	<section class="container-fluid">
+		<div class="container-body">
+			<div class="related-product-heading">
+				<h5><span>Related Product</span></h5>
+			</div>
+			<div class="mix-container">
+				<!-- ninth product -->
+				<div class="mix">
+					<div class="product-img">
+						<img src="../../assets/images/shope-two-prodict-img-9.png" alt="product-8">
+						<span class="discount-rate">40% off</span>
+						<div class="panel">
+							<a href="#"><i class="fas fa-sync-alt"></i></a>
+							<a href="#"><i class="fas fa-heart"></i></a>
+							<a href="#"><i class="fas fa-cart-arrow-down"></i></a>
+							<a href="#"><i class="fas fa-eye"></i></a>
+						</div>
+					</div>
+					<div class="details-info">
+						<div class="review">
+							<div class="stars">
+								<span class="fas fa-star"></span>
+								<span class="fas fa-star"></span>
+								<span class="fas fa-star"></span>
+								<span class="fas fa-star"></span>
+								<span class="far fa-star"></span>
+								<span>( 58 reviews )</span>
+							</div>
+						</div>
+						<div class="product-name">
+							<a href="#">Pendent office chair</a>
+						</div>
+						<div class="product-price">
+							$80.00 <del>$109.00</del>
+						</div>
+						<div class="product-colors">
+							<div class="black-block"></div>
+							<div class="gray-block"></div>
+							<div class="pink-block"></div>
+						</div>
+					</div>
+				</div>
+				<!-- tenth product -->
+				<div class="mix">
+					<div class="product-img">
+						<img src="../../assets/images/shope-two-prodict-img-10.png" alt="product-8">
+						<div class="panel">
+							<a href="#"><i class="fas fa-sync-alt"></i></a>
+							<a href="#"><i class="fas fa-heart"></i></a>
+							<a href="#"><i class="fas fa-cart-arrow-down"></i></a>
+							<a href="#"><i class="fas fa-eye"></i></a>
+						</div>
+					</div>
+					<div class="details-info">
+						<div class="review">
+							<div class="stars">
+								<span class="fas fa-star"></span>
+								<span class="fas fa-star"></span>
+								<span class="fas fa-star"></span>
+								<span class="fas fa-star"></span>
+								<span class="far fa-star"></span>
+								<span>( 58 reviews )</span>
+							</div>
+						</div>
+						<div class="product-name">
+							<a href="#">Pendent office chair</a>
+						</div>
+						<div class="product-price">
+							$80.00 <del>$109.00</del>
+						</div>
+						<div class="product-colors">
+							<div class="black-block"></div>
+							<div class="gray-block"></div>
+							<div class="pink-block"></div>
+						</div>
+					</div>
+				</div>
+				<!-- eleventh product -->
+				<div class="mix">
+					<div class="product-img">
+						<img src="../../assets/images/shope-two-prodict-img-11.png" alt="product-8">
+						<span class="new-available">New</span>
+						<div class="panel">
+							<a href="#"><i class="fas fa-sync-alt"></i></a>
+							<a href="#"><i class="fas fa-heart"></i></a>
+							<a href="#"><i class="fas fa-cart-arrow-down"></i></a>
+							<a href="#"><i class="fas fa-eye"></i></a>
+						</div>
+					</div>
+					<div class="details-info">
+						<div class="review">
+							<div class="stars">
+								<span class="fas fa-star"></span>
+								<span class="fas fa-star"></span>
+								<span class="fas fa-star"></span>
+								<span class="fas fa-star"></span>
+								<span class="far fa-star"></span>
+								<span>( 58 reviews )</span>
+							</div>
+						</div>
+						<div class="product-name">
+							<a href="#">Pendent office chair</a>
+						</div>
+						<div class="product-price">
+							$80.00 <del>$109.00</del>
+						</div>
+						<div class="product-colors">
+							<div class="black-block"></div>
+							<div class="gray-block"></div>
+							<div class="pink-block"></div>
+						</div>
+					</div>
+				</div>
+				<!-- twelve product -->
+				<div class="mix">
+					<div class="product-img">
+						<img src="../../assets/images/shope-two-prodict-img-2.png" alt="product-8">
+						<span class="new-available"> -40% offer </span>
+						<div class="panel">
+							<a href="#"><i class="fas fa-sync-alt"></i></a>
+							<a href="#"><i class="fas fa-heart"></i></a>
+							<a href="#"><i class="fas fa-cart-arrow-down"></i></a>
+							<a href="#"><i class="fas fa-eye"></i></a>
+						</div>
+					</div>
+					<div class="details-info">
+						<div class="review">
+							<div class="stars">
+								<span class="fas fa-star"></span>
+								<span class="fas fa-star"></span>
+								<span class="fas fa-star"></span>
+								<span class="fas fa-star"></span>
+								<span class="far fa-star"></span>
+								<span>( 58 reviews )</span>
+							</div>
+						</div>
+						<div class="product-name">
+							<a href="#">Pendent office chair</a>
+						</div>
+						<div class="product-price">
+							$80.00 <del>$109.00</del>
+						</div>
+						<div class="product-colors">
+							<div class="black-block"></div>
+							<div class="gray-block"></div>
+							<div class="pink-block"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- footer section -->
+	<footer class="container-fluid">
+		<div class="container-body">
+			<div class="row">
+				<div class="col-xl-3 col-md-6 col-12">
+					<div class="footer-heading">
+						Customer Services
+					</div>
+					<div class="footer-des">
+						Aempor tellus dictumst lectus earum necessitatibus consequunturo
+					</div>
+					<div class="location-head">
+						LOCATION
+					</div>
+					<div class="location-place">
+						754 Road, 36 Floor New York, USA
+					</div>
+				</div>
+				<div class="col-xl-3 col-md-6 col-12">
+					<div class="footer-heading">
+						Our Shop
+					</div>
+					<div class="footer-links">
+						<a href="#">Wooden Chair</a>
+						<a href="#">Plastic Table</a>
+						<a href="#">Pendent Light</a>
+						<a href="#">Bottle</a>
+					</div>
+				</div>
+				<div class="col-xl-3 col-md-6 col-12">
+					<div class="footer-heading">
+						Useful Links
+					</div>
+					<div class="footer-links">
+						<a href="#">About Us</a>
+						<a href="#">Term of Service</a>
+						<a href="#">Privacy Policy</a>
+						<a href="#">Shipping</a>
+					</div>
+				</div>
+				<div class="col-xl-3 col-md-6 col-12">
+					<div class="footer-heading">
+						Social Profile
+					</div>
+					<div class="download-des">
+						Download From <br>App Store
+					</div>
+					<div class="app-stores">
+						<a href="#">
+							<img src="../../assets/images/footer-app-img-1.png" alt="app-1">
+						</a>
+						<a href="#">
+							<img src="../../assets/images/footer-app-img-2.png" alt="app-2">
+						</a>
+					</div>
+				</div>
+				<!-- last section for footer -->
+				<div class="col-12">
+					<div class="container-fluid p-0">
+						<div class="row last-footer-sec">
+							<div class="col-md-3 col-12 icon-align">
+								<div class="social-media-icons">
+									<a href="#"><span><i class="fab fa-facebook"></i></span></a>
+									<a href="#"><span><i class="fab fa-instagram"></i></span></a>
+									<a href="#"><span><i class="fab fa-twitter"></i></span></a>
+									<a href="#"><span><i class="fab fa-youtube"></i></span></a>
+									<a href="#"><span><i class="fab fa-pinterest"></i></span></a>
+								</div>
+							</div>
+							<div class="col-md-9 col-12 copyright-align">
+								All right reserved © by <a
+									href="https://preview.themeforest.net/item/foxture-minimal-ecommerce-html-template/full_screen_preview/34000437?_ga=2.200351145.621205759.1634125966-1231243636.1634117389">Egens
+									Lab</a> & cloned by <a href="https://github.com/Sharif-Zahid">Zahid</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="../../assets/lib/jQuery-3.6.0/jquery-3.6.0.min.js"></script>
+	<script src="../../assets/lib/slick-1.8.1/slick/slick.min.js"></script>
+	<script src="../../assets/lib/patrickkunka-mixitup-61dac05/dist/mixitup.min.js"></script>
+	<script src="../../assets/lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+	<script src="../../assets/lib/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
+	<script src="../../scripts/preloader.js"></script>
+	<script src="../../scripts/magnaficPopup.js"></script>
+	<script src="../../scripts/slick.js"></script>
+	<script src="../../scripts/mixitup.js"></script>
+	<script src="../../scripts/main.js"></script>
+	<script src="../../scripts/imageMagnifier.js"></script>
+	<script src="../../scripts/shop.js"></script>
+	<script src="../../scripts/custom.js"></script>
+
+</body>
+
+</html>
