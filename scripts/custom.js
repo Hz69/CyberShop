@@ -1,3 +1,21 @@
+// auth based javascript
+const isLoggedIn = sessionStorage.getItem("auth");
+
+const authStatus = document.getElementById("auth-status");
+
+if (isLoggedIn === "true") {
+  authStatus.innerHTML = "Logout";
+}
+
+function auth() {
+  if (isLoggedIn === "true") {
+    sessionStorage.removeItem("auth");
+    authStatus.innerHTML = "Login";
+  } else {
+    authStatus.innerHTML = "Logout";
+  }
+}
+
 let toTopbtn = document.getElementsByClassName("goTop")[0];
 
 let pin = document.getElementById("pin");
@@ -34,22 +52,3 @@ clsBtnNewsLatter.addEventListener("click", function () {
 setTimeout(function () {
   newsLetter.classList.remove("hidden-wrapper");
 }, 5000);
-
-// auth based javascript
-const isLoggedIn = sessionStorage.getItem("auth");
-
-console.log(isLoggedIn);
-const authStatus = document.getElementById("auth-status");
-
-if (isLoggedIn) {
-  authStatus.innerHTML = "Logout";
-}
-
-function auth() {
-  if (isLoggedIn) {
-    sessionStorage.removeItem("auth");
-    authStatus.innerHTML = "Login";
-  } else {
-    authStatus.innerHTML = "Logout";
-  }
-}
