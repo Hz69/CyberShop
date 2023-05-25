@@ -54,13 +54,6 @@
 							Shop
 						</button>
 					</h2>
-					<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-						data-bs-parent="#accordionExample">
-						<div class="accordion-body custom-acc-body">
-							<a href="../../views/shop/shopSingles.html">Single Shop</a>
-							<a href="../../views/shop/shopDetails.html">Details Shop</a>
-						</div>
-					</div>
 				</div>
 
 				<a href="../contact.html" class="wrap-link">Contact Us</a>
@@ -74,7 +67,7 @@
 				<a href="#" class="slider-logo"><i class="fas fa-sliders-h"></i></a>
 				<a href="../../index.html">Home</a>
 				<div class="shop-link">
-					<a href="./../shop/shopDetails.html" class="sub-menu">Shop</a>
+					<a href="./../shop/shopSingles.html" class="sub-menu">Shop</a>
 				</div>
 
 				<a href="../contact.html">Contact Us</a>
@@ -118,17 +111,17 @@
 	<!-- checkout description -->
 	<section class="container-fluid">
 		<div class="container-body">
-			<form action="./404.html" class="row">
+			<form id="checkout-form" action="https://formspree.io/f/xwkjjqar" method="post" class="row">
 				<div class="col-md-6 col-12 card-info">
 					<h5>Billing Address</h5>
 					<div>
 						<div class="checkout-input-section">
 							<label class="text-muted" for="fname">Full Name*</label>
-							<input type="text" class="form-control" required>
+							<input type="text" name="User-Name" class="form-control" required>
 						</div>
 						<div class="checkout-input-section">
 							<label class="text-muted" for="address">Company Name (optional)</label>
-							<input type="text" class="form-control">
+							<input type="text" name="Company" class="form-control">
 						</div>
 						<div class="checkout-input-section d-flex gap-3">
 							<div class="country w-100">
@@ -144,17 +137,17 @@
 							</div>
 							<div class="postal-code w-100">
 								<label class="text-muted" for="postal-code">Postal code*</label>
-								<input type="number" class="form-control" required>
+								<input type="number" name="Postal-code" class="form-control" required>
 							</div>
 						</div>
 						<div class="checkout-input-section d-flex gap-3">
 							<div class="zip-code w-100">
 								<label class="text-muted" for="zip-code">Zip code*</label>
-								<input type="number" class="form-control" required>
+								<input name="Zip-code" type="number" class="form-control" required>
 							</div>
 							<div class="validity w-100">
 								<label class="text-muted" for="validity">Card validity*</label>
-								<input type="date" class="form-control" required>
+								<input name="Card-validity" type="date" class="form-control" required>
 							</div>
 						</div>
 					</div>
@@ -167,7 +160,7 @@
 						</tr>
 						<tr>
 							<td class="text-muted">Main price</td>
-							<td class="text-muted">$130.00</td>
+							<td id="main-full-price" class="text-muted">$130.00</td>
 						</tr>
 						<tr>
 							<td class="text-muted">Shipping fee</td>
@@ -175,7 +168,7 @@
 						</tr>
 						<tr>
 							<td>Total</td>
-							<td>$143.00</td>
+							<td id="main-total-price">$143.00</td>
 						</tr>
 						<tr>
 							<td colspan="2">
@@ -198,7 +191,7 @@
 												class="form-check-input me-2" type="radio" value="cash">
 											<label for="cashDel"> Cash On Delivery </label>
 										</div>
-										<select class="form-select mb-4" id="cash" disabled>
+										<select name="Payment-Method" class="form-select mb-4" id="cash" disabled>
 											<option value=4> --Pay With Cash-- </option>
 											<option value=5>USD ($)</option>
 											<option value=6>TAKA (৳)</option>
@@ -304,6 +297,7 @@
 	<script src="../../assets/lib/jQuery-3.6.0/jquery-3.6.0.min.js"></script>
 	<script src="../../assets/lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 	<script src="../../scripts/preloader.js"></script>
+	<script src="../../scripts/checkout.js"></script>
 	<script src="../../scripts/main.js"></script>
 	<script src="../../scripts/shop.js"></script>
 	<script src="../../scripts/custom.js"></script>

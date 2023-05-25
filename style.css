@@ -57,6 +57,14 @@ body {
   padding-bottom: 3rem !important;
 }
 
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.me-2 {
+  margin-right: 0.8rem !important;
+}
+
 .form-control {
   display: block;
   width: 100%;

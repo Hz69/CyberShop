@@ -1,8 +1,10 @@
 const addToCart = (productName, productPrice, productImage) => {
-  localStorage.setItem(
-    `product`,
-    JSON.stringify({ productName, productPrice, productImage })
-  );
+  if (sessionStorage.getItem("auth") === "true") {
+    localStorage.setItem(
+      `product`,
+      JSON.stringify({ productName, productPrice, productImage })
+    );
+  }
 };
 
 // shop one
@@ -42,6 +44,7 @@ function likeProduct() {
 }
 
 // for total bill in cart page
+let bill = Number(document.getElementById("total-bill").innerHTML) || 0;
 let totalBill = document.getElementById("total-bill");
 
 let productCount = Number(document.getElementById("product-count").innerHTML);
@@ -58,7 +61,8 @@ function increaseCount() {
   document.getElementById("main-price").innerHTML = (
     mainPrice * productCount
   ).toFixed(2);
-  totalBill.innerHTML = (mainPrice * productCount + 13).toFixed(2);
+  bill = mainPrice * productCount + 13;
+  totalBill.innerHTML = bill.toFixed(2);
 }
 
 function decreaseCount() {
@@ -70,7 +74,8 @@ function decreaseCount() {
   document.getElementById("main-price").innerHTML = (
     mainPrice * productCount
   ).toFixed(2);
-  totalBill.innerHTML = (mainPrice * productCount + 13).toFixed(2);
+  bill = mainPrice * productCount + 13;
+  totalBill.innerHTML = bill.toFixed(2);
 }
 
 // image popup
@@ -109,6 +114,10 @@ function passingValue(discount, main, heading) {
   productCount = Number(productCountCng.innerHTML);
   discountPrice = Number(discountPriceCng.innerHTML);
   mainPrice = Number(mainPriceCng.innerHTML);
+}
+
+function proceedToCheckout() {
+  localStorage.setItem("bill", JSON.stringify({bill, mainPrice}));
 }
 
 // payment group

@@ -121,7 +121,7 @@
 				<div class="col-md-6 col-12">
 					<div class="p-heading-sm ps-3">Product</div>
 					<div class="p-img-sm">
-						<img src="../../assets/images/shop-img-details-2.png" alt="product_img">
+						<img id="cartImage" src="../../assets/images/shop-img-details-2.png" alt="product_img">
 						<span class="text-muted text-nowrap">Juice <span class="to-hide">Isabella common smooth</span>
 							office chair</span>
 						<div class="d-flex justify-content-end w-100">
@@ -137,7 +137,7 @@
 					</div>
 					<div class="p-main-section">
 						<div class="ph-price">
-							$<span>130.00</span>
+							$<span class="prod-price">130.00</span>
 						</div>
 						<div class="price-indicators">
 							<span onclick="decreaseCount();"> - </span>
@@ -145,7 +145,7 @@
 							<span onclick="increaseCount();"> + </span>
 						</div>
 						<div class="ph-total">
-							$<span id="main-price">130.00</span>
+							$<span class="prod-price" id="main-price">130.00</span>
 						</div>
 					</div>
 				</div>
@@ -168,7 +168,7 @@
 								Total
 							</div>
 							<div class="price">
-								$<span class="discount-price">130.00</span>
+								$<span class="discount-price prod-price">130.00</span>
 							</div>
 						</div>
 						<div class="shipping-add">
@@ -193,7 +193,7 @@
 						</div>
 						<div class="confirmation">
 							<a href="#"><span>Update cart <i class="fas fa-pencil-alt"></i></span></a>
-							<a href="./checkout.html"><button class="btn shop-btn text-center">Proceed</button></a>
+							<a onclick="proceedToCheckout();" href="./checkout.html"><button class="btn shop-btn text-center">Proceed</button></a>
 						</div>
 					</div>
 				</div>
@@ -285,8 +285,9 @@
 	<script src="../../assets/lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 	<script src="../../scripts/preloader.js"></script>
 	<script src="../../scripts/main.js"></script>
-	<script src="../../scripts/shop.js"></script>
 	<script src="../../scripts/custom.js"></script>
+	<script src="../../scripts/cart.js"></script>
+	<script src="../../scripts/shop.js"></script>
 
 </body>
 
