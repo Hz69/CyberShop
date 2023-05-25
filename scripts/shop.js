@@ -1,6 +1,6 @@
 const addToCart = (productName, productPrice, productImage) => {
   localStorage.setItem(
-    `product${Date.now()}`,
+    `product`,
     JSON.stringify({ productName, productPrice, productImage })
   );
 };
